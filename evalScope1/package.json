@@ -1,0 +1,8 @@
+{
+  "name": "evalScope1",
+  "version": "1.0.0",
+  "main": "./eval_scope.js",
+  "dependencies": {
+    "q": "^1.0.0"
+  }
+}
