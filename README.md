@@ -19,7 +19,7 @@ Right now require-version only does exact version matches, but could incorporate
 
 ### Setup
 
-Right now this consists of two scoped libraries that represent different versions (evalScope 1.0.0 and evalScope 2.0.0).  To install the apps into node_modules use the powershells script: `install-packages.ps1`  
+Right now this consists of two scoped libraries that represent different versions (evalScope 1.0.0 and evalScope 2.0.0).  To install the apps into node_modules use the powershells script: `install-packages.ps1` or bash script `install.sh`.
 
 This will create a structure like this:
 ```
