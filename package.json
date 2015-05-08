@@ -1,0 +1,31 @@
+{
+  "name": "require-version",
+  "version": "0.1.0",
+  "description": "Allows requiring of specific versions",
+  "main": "require-version.js",
+  "dependencies": {
+    "semver": "^4.3.4"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "jshint": "^2.7.0",
+    "mocha": "^2.2.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brumfb/require-version.git"
+  },
+  "keywords": [
+    "require",
+    "version"
+  ],
+  "author": "Robert Brumfield",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brumfb/require-version/issues"
+  },
+  "homepage": "https://github.com/brumfb/require-version"
+}
