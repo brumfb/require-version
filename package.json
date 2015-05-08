@@ -11,6 +11,11 @@
     "jshint": "^2.7.0",
     "mocha": "^2.2.4"
   },
+   "files": [
+    "require-version.js",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

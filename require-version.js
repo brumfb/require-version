@@ -1,4 +1,4 @@
-"usage strict"
+"use strict";
 
 var Module = require('module');
 var path = require('path');
@@ -11,17 +11,17 @@ var findVersion = function(versionPath, soughtModule, soughtVersion) {
 	var match = null;
 
 	versions.sort(semver.rcompare);
-	for(i = 0; i < versions.length; i++) {
+	for(var i = 0; i < versions.length; i++) {
 		if (semver.satisfies(versions[i], soughtVersion)) {
 			return versions[i];
 		}
 	}
 
-	return match
-}
+	return match;
+};
 
 module.constructor.prototype.require = function(request) {
-	var newRequest = request
+	var newRequest = request;
 	var versionedRequest = request.split('@');
 
 	if (versionedRequest.length === 2) {
@@ -30,14 +30,14 @@ module.constructor.prototype.require = function(request) {
 
 		var match = findVersion(versionedModulesPath, versionedRequest[0], versionedRequest[1]);
 		
-		if (match != null) {
+		if (match !== null) {
 			// Prepend modules path and change request to resolve specific version
-			this.paths.unshift(path.join(versionedModulesPath))	// unshift === prepend.
-			newRequest = path.join(versionedRequest[0], match)
+			this.paths.unshift(path.join(versionedModulesPath)); 
+			newRequest = path.join(versionedRequest[0], match);	
 		}
 	}
 
 	return baseRequire.apply(this, [newRequest]);
 };
 
-module.exports = require
+module.exports = require;
